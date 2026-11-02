@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "GARA Main Experiment Data"
+message: "Please cite the accompanying GARA paper and the original benchmarks."
+type: dataset
+version: 1.0.0
+date-released: '2026-11-03'
+authors:
+  - given-names: Aojie
+    family-names: Xu
+  - given-names: Wenbo
+    family-names: Wu
+  - given-names: Weizhen
+    family-names: Wang
+  - given-names: Yuan
+    family-names: Fang
+repository-artifact: "https://github.com/originvale/GARA-Main-Experiment-Data"
+license: CC-BY-4.0

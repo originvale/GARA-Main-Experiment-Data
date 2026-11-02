@@ -1,0 +1,44 @@
+{
+  "title": "GARA Main Experiment Data",
+  "version": "1.0.0",
+  "paper_title": "State-Aware Dynamic Retrieval Allocation for Resource-Constrained Multi-Hop Question Answering",
+  "paper_tables": [
+    2,
+    3
+  ],
+  "queries": 1800,
+  "queries_per_dataset": 600,
+  "primary_model": "deepseek-ai/DeepSeek-V3.2",
+  "max_followups_per_query": 2,
+  "shared_followup_budget": 1800,
+  "total_followup_capacity": 3600,
+  "primary_seed": 20260829,
+  "state_score_scale": "0-100",
+  "metric": "DROP token-level F1, rounded on 0-1 scale before averaging",
+  "main_methods": [
+    "Adaptive-RAG",
+    "MBA-RAG",
+    "Current-quality",
+    "GARA",
+    "RAG-QPP",
+    "Structured Planning"
+  ],
+  "offline_oracle": true,
+  "counts": {
+    "shared_trajectories": 1800,
+    "shared_reader_calls": 5400,
+    "shared_retrieval_calls": 5400,
+    "shared_allocation_actions": 7200,
+    "shared_per_query_results": 7200,
+    "rag_qpp_reader_calls": 1800,
+    "rag_qpp_retrieval_calls": 1800,
+    "rag_qpp_trajectories": 1800,
+    "structured_planning_reader_calls": 14012,
+    "structured_planning_retrieval_calls": 5206,
+    "structured_planning_trajectories": 1800,
+    "pipeline_per_query_results": 3600,
+    "pipeline_dependency_events": 22818
+  },
+  "code_repository": "https://github.com/originvale/GARA",
+  "data_repository": "https://github.com/originvale/GARA-Main-Experiment-Data"
+}
